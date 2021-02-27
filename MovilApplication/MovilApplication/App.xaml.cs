@@ -1,18 +1,22 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿
 
 namespace MovilApplication
 {
+    using Views;
+    using Xamarin.Forms;
     public partial class App : Application
     {
+        #region Constructor
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            // MainPage = new LoginPage();
+            this.MainPage = new NavigationPage(new LoginPage());
         }
+        #endregion
 
+        #region Metodos
         protected override void OnStart()
         {
         }
@@ -23,6 +27,7 @@ namespace MovilApplication
 
         protected override void OnResume()
         {
-        }
+        } 
+        #endregion
     }
 }

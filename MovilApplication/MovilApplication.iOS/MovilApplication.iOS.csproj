@@ -160,4 +160,7 @@
       <Name>MovilApplication</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppLogo.png" />
+  </ItemGroup>
 </Project>
