@@ -15,7 +15,6 @@ namespace MovilApplication.Infrastructure
         #endregion
 
 
-
         #region Contructor
 
         public InstanceLocator()

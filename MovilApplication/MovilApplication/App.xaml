@@ -6,6 +6,17 @@
     <Application.Resources>
         <ResourceDictionary>
             <infra:InstanceLocator x:Key="Locator"></infra:InstanceLocator>
+            <!--PARA WEB API EN LA NUEVE-->
+            <!--<x:String x:Key="APIServices">http://webservice.hrv.ec</x:String>-->
+
+            <!--PARA WEB API EN LA NUEVE PERO PARA TEST-->
+            <!--<x:String x:Key="APIServices">http://test.prestasalud.com</x:String>-->
+
+            <!--PARA WEB API EN EL IIS DEL EQUIPO-->
+            <!--<x:String x:Key="APIServices">http://192.168.100.11/Ws_WorkOrders/</x:String>-->
+
+            <!--PARA WEB API EN EN DEBUG - DESARROLLO-->
+            <x:String x:Key="APIServices">http://localhost:44332/</x:String>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

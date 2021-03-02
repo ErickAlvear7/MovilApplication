@@ -36,7 +36,7 @@
                          Grid.Column="1"
                          Grid.Row="0"
                          Placeholder="Ingrese Usuario"
-                         Text="{Binding mombreUsuario,Mode=TwoWay}">
+                         Text="{Binding NombreUsuario,Mode=TwoWay}">
                     </Entry>
                     <Label
                          Grid.Column="0"
@@ -60,8 +60,8 @@
                     VerticalOptions="Center">
                     </Label>
                     <Switch
-                    IsToggled="{Binding isToggled,Mode=TwoWay}">
-
+                        IsToggled="{Binding IsRemember,Mode=TwoWay}"
+                        HorizontalOptions="End">
                     </Switch>
                 </StackLayout>
                 <ActivityIndicator
@@ -76,6 +76,7 @@
                        CornerRadius="23"
                        HeightRequest="46"
                        Text="Iniciar Sesion"
+                       IsEnabled="{Binding isEnabled,Mode=TwoWay}"
                        TextColor="White">
                     </Button>
                     <Button
